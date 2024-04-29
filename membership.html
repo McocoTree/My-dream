@@ -1,0 +1,145 @@
+<html lang="en" dir="ltr"><head>
+  <meta charset="utf-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="membership.css">
+  <script src="membership.js"></script>
+</head>
+  <div id="center_align">
+    <div id="h2_align">
+      <h2>회 원 가 입</h2>
+    </div>
+    <form class="" name="frm" action="membership.html" method="post">
+      <h4>ENTER SITE USAGE INFORMATION</h4>
+      <div class="">
+        <table>
+          <tbody><tr>
+            <th>ID</th>
+            <td>
+              <p>영문자, 숫자,_만 입력 가능. 최소3자이상 입력하세요</p>
+              <input type="text" class="essential_form" id="idInput" value="" onkeyup="idCheck()">
+              <span class="span_warning" id="idCorrect"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>PASSWORD</th>
+            <td>
+              <p>영문자, 숫자, 특수문자를 포함하여 6-12자를 입력하세요</p>
+              <input type="password" class="essential_form" id="pwInput" value="" onkeyup="pwCheck()">
+              <span class="span_warning" id="pwCorrect"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>PASSWORD CHECK</th>
+            <td>
+              <input type="password" class="essential_form" id="pw2Input" value="" onkeyup="pwCheck2()">
+              <span class="span_warning" id="pwCorrect2"></span>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+      <h4><strong> PERSONAL INFORMATION </strong></h4>
+      <div class="">
+        <table>
+          <tbody><tr>
+            <th>Name</th>
+            <td>
+              <input type="text" class="essential_form" id="nameInput" value="" onkeyup="nameCheck()">
+              <span class="span_warning" id="nameCorrect"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>NICKNAME</th>
+            <td>
+              <p>공백없이 한글,영문,숫자만 입력 가능<br></p>
+              <input type="text" class="essential_form" id="nickInput" value="" onkeyup="nickCheck()">
+              <span class="span_warning" id="nickCorrect"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>E-MAIL</th>
+            <td>
+              <input type="email" class="essential_form" id="emailInput" size="70" value="" onkeyup="emailCheck()">
+              <span class="span_warning" id="emailCorrect"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>SUBSCRIPTION PATH</th>
+            <td>
+              <div id="enter">
+                <input type="radio" name="enterReason" value=""><span>USA</span>
+                <input type="radio" name="enterReason" value=""><span>RUS</span>
+                <input type="radio" name="enterReason" value=""><span>JPN</span>
+                <input type="radio" name="enterReason" value=""><span>KOR</span>
+                <input type="radio" name="enterReason" value=""><span>DMK</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>PHONE NUMBER</th>
+            <td>
+              <input type="tel" class="essential_form" id="telInput" value="" onkeyup="telCheck()">
+              <span class="span_warning" id="telCorrect"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>CELL PHONE NUMBER</th>
+            <td>
+              <input type="tel" class="essential_form" id="phoneInput" value="" onkeyup="phoneCheck()">
+              <span class="span_warning" id="phoneCorrect"></span>
+            </td>
+          </tr>
+          
+          <tr>
+            <th>ADDRESS</th>
+            <td>
+              <div id="address_total">
+                <div class="address_search">
+                  <input class="essential_form" type="text" id="inputPost" value="" onkeyup="postCheck()">
+                  <button type="button" id="btn_address">주소검색</button><span class="span_warning" id="postCorrect"></span>
+                </div>
+                <input class="essential_form" type="text" id="inputAddress" value="" size="70" onkeyup="addressCheck()">
+                <span>기본주소</span><span class="span_warning" id="addressCorrect"></span><br>
+                <input type="text" name="" value="" size="70"><span> 상세주소</span><br>
+                
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+      <h4>ETC_SETTINGS</h4>
+      <div id="etc_settings">
+        <table>
+          <tbody><tr>
+            <th>카카오톡 메세지</th>
+            <td>
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="etc_span">카카오톡 메세지를 받겠습니다.</span>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>메일</th>
+            <td>
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="etc_span">정보 메일을 받겠습니다.</span>
+            </td>
+          </tr>
+          <tr>
+            <th>SMS 수신여부</th>
+            <td> 
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="etc_span">휴대폰 문자메세지를 받겠습니다.</span>
+            </td>
+          </tr>
+          </tbody>
+      </table>
+      </div>
+      <div id="submit">
+        <input type="submit" id="signin" value="회원가입" onclick="signinDone(event)">
+        <button type="button" id="cancel">취소</button>
+      </div>
+      <img id="displayedImage" src="" style="display: none;">
+    </form>
+  </div>
+  </body>
+</html>

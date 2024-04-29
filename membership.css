@@ -1,0 +1,211 @@
+main{
+  position: relative;
+  margin: 0px auto;
+  width: 1100px;
+  height: 770px;
+
+}
+#align_input{
+  display: inline-block;
+  width:264px;
+}
+#align_center{
+  display: inline-block;
+  width: 100%;
+}
+#login_form_btn{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#btn_login{
+  width: 56px;
+  height: 46px;
+  display: inline-block;
+  
+}
+#btn_login>input{
+  width: 60px;
+  height: 46px;
+  margin:2px;
+  padding: 0;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: hidden;
+}
+#input_forms{
+  display: inline-block;
+  
+}
+#check_otp{
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+#check_otp>a{
+  color: gray;
+}
+#otp_div>button{
+  width: 15px;
+  height: 15px;
+  color: gray;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+#ckb_div{
+  float:left;
+}
+#otp_div
+{
+  float:right;
+}
+#btn_align, #btn_align>input, #btn_align>button{
+  clear: both;
+  font-size: 12px;
+  color: gray;
+}
+#btn_align a{
+  font-size: 12px;
+  text-decoration: none;
+  color: gray;
+}
+#btn_align>input:hover, #btn_align>button:hover{
+  color: rgba(30, 94, 217, 0.71);
+  border: 1px solid rgba(30, 94, 217, 0.71);
+}
+#center_align{
+  position: relative;
+  margin: 0px auto;
+  width: 1100px;
+}
+#h2_align{
+  text-align: center;
+}
+p{
+  margin: 2px;
+  font-size: 12px;
+}
+h4{
+  margin-bottom: 8px;
+}
+table{
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th:nth-child(odd){
+  background-color: #f4f4f4;
+}
+th, td{
+  border-collapse: collapse;
+}
+th{
+  width: 100px;
+  border-right: 1px solid lightgray;
+  border-top:1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  font-size: 14px;
+}
+td{
+  width: 1000px;
+  border-left: 1px solid lightgray;
+  border-top:1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+#kakao_msg{
+  color: red;
+}
+.span_warning {
+  font-size: 15px;
+  color: red;
+}
+
+input{
+  background-color: #f4f4f4;
+  border: 1px solid lightgray;
+  margin: 8px;
+  height: 27px;
+  border-radius: 2px;
+}
+.essential_form{
+  background-image: url(../img/wrest.gif);
+  background-repeat: no-repeat;
+  background-position: top right;
+  border: 1px solid lightgray;
+}
+#etc_settings{
+  margin-bottom: 20px;
+}
+.etc_span{
+  display: inline-block;
+  vertical-align: 7px;
+  font-size: 14px;
+}
+#submit{
+  text-align: center;
+}
+#address{
+  background-color: black;
+  color: white;
+  border-style: hidden;
+  margin-top: 2px;
+}
+
+ /*---login----*/
+
+#signin{
+  background-color: rgb(20, 174, 51);
+  color: white;
+  border: 1px solid rgb(37, 220, 74);
+  margin-top: 2px;
+  height: 40px;
+}
+#cancel{
+  background-color: #f4f4f4;
+  color: gray;
+  border: 1px solid lightgray;
+  margin-top: 2px;
+  height: 40px;
+
+}
+#address_total{
+  padding: 5px 0px;
+  font-size: 14px;
+}
+#address_total input{
+  margin: 3px 8px;
+}
+#enter{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+#enter span{
+  display: inline-block;
+  vertical-align: 6px;
+  font-size: 14px;
+
+}
+#not_robot_form input{
+  margin-right: 2px;
+}
+.btn_code{
+  margin: 0;
+}
+#outputCode{
+  display: none;
+}
+#canvas_robot{
+  margin-left: 8px;
+  position: relative;
+  top: 13px;
+  border:1px solid rgb(224, 212, 212);
+  background-color: rgb(178, 210, 103);
+}
