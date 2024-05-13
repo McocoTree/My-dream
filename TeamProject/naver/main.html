@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVER</title>
+  <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+  </script>
+  <div id="wrap">
+    <div id="header" role="banner" class="type_ad">
+      <div id="topSearchWrap" class="header_inner">
+        <div id="search_area" class="search_area">
+          <div id="special-input-logo-ex" class="link_search_special" style="display: none"></div>
+          <div class="search_group">
+            <div id="search" class="search_group_inner">
+              <h1 id="special-input-logo" class="search_logo">
+              </h1>
+              <form id="sform" name="search" role="search" action="https://search.naver.com/search.naver" method="get">
+                <div class="search_input_box">
+                  <input id="query" name="query" type="search" title="검색어를 입력해 주세요." placeholder="검색어를 입력해 주세요."
+                    maxlength="255" autocomplete="off" class="search_input" data-atcmp-element="" />
+                </div>
+                <button type="submit" class="btn_search" onclick='window.nclk_v2(this,"sch.action")'>
+
+                  <span class="blind">검색</span>
+                </button>
+                </fieldset>
+              </form>
+              <div class="search_box">
+                <button id="ke_kbd_btn" type="button" class="btn_keyboard" aria-pressed="false">
+                  <span class="keybord_text">
+                    <span class="blind">입력도구</span>
+                  </span>
+                </button>
+                <div id="_nx_kbd" style="display: none"></div>
+                <button id="nautocomplete" type="button" class="btn_arrow" data-atcmp-element="">
+
+                </button>
+              </div>
+              <div class="layer_atcmp" id="autoFrame" style="display: none">
+                <div class="ly_atcmp" data-atcmp-element="">
+                  <div class="api_atcmp_wrap">
+                    <div class="atcmp_fixer _recent_layer" style="display: none">
+                      <div class="atcmp_header _recent_header">
+
+                        <div class="option">
+                          <a role="button" href="#" class="item _delAll" aria-pressed="false">전체삭제</a>
+                        </div>
+                      </div>
+                      <div class="atcmp_container">
+                        <ul class="kwd_lst _recent"></ul>
+                        <div class="kwd_info kwd_off _offMsg" style="display: none">
+                          검색어 저장 기능이 꺼져 있습니다.<br /><span class="kwd_dsc">설정이 초기화 된다면
+                            <a href="https://help.naver.com/alias/search/word/word_35.naver" class="kwd_help"
+                              data-clk="sly.help" target="_blank">도움말</a>을 확인해주세요.</span>
+                        </div>
+                        <div class="kwd_info kwd_none _recentNone" style="display: none">
+                          최근 검색어 내역이 없습니다.<br /><span class="kwd_dsc">설정이 초기화 된다면
+                            <a href="https://help.naver.com/alias/search/word/word_35.naver" class="kwd_help"
+                              data-clk="sly.help" target="_blank">도움말</a>을 확인해주세요.</span>
+                        </div>
+                      </div>
+                      <div class="atcmp_footer">
+                        <span class="side_opt_area">
+                          <span class="opt_item">
+                            <a href="#" class="close _keywordOnOff">자동저장 끄기</a>
+                          </span>
+                          <span class="opt_item"><a href="https://help.naver.com/alias/search/word/word_35.naver"
+                              data-clk="sly.help" target="_blank">도움말</a></span>
+                        </span>
+                        <span class="rside_opt_area">
+                          <span class="opt_item"><a href="#" class="close _close">닫기</a></span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="atcmp_fixer _atcmp_layer" style="display: none">
+                      <div class="atcmp_container _words">
+                        <ul class="kwd_lst _kwd_list"></ul>
+                        <div class="atcmp_cue type_line _cue_root">
+                          <div class="cue_header">
+                            <i class="imgsvg ico_cue">CUE</i>대화하듯 질문해
+                            보세요<a href="#" role="button" class="btn_help _tg_btn" aria-pressed="false"><i
+                                class="imgsvg ico_alert">이 정보가 표시된 이유</i></a>
+                            <div class="layer_plus">
+                              <p class="dsc">
+                                검색어와 포함된 키워드를 기반으로 AI 기술을
+                                활용하여 연관된 추천 질문을 제공합니다.
+                              </p>
+                              <a href="#" role="button" class="btn_close _tg_btn"><i class="imgsvg ico_close">레이어
+                                  닫기</i></a>
+                            </div>
+                          </div>
+                          <ul class="cue_list _ul"></ul>
+                        </div>
+                        <div class="atcmp_alert _alert">
+                          <div class="dsc_election">
+                            <p class="dsc">
+                              <i class="imgsvg ico_election"></i>
+                              <span class="_alert_passage"></span>
+                            </p>
+                            <span class="dsc_inner">
+                              <span class="_alert_passage2"></span>
+                              <a href="#" class="link _alert_link" target="_blank">자세히보기</a>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="atcmp_plus _plus">
+                          <div class="dsc_plus">
+                            <a href="https://help.naver.com/alias/search/word/word_16.naver" class="link_dsc"
+                              data-clk="sug.cxhelp" target="_blank">관심사를 반영한 컨텍스트 자동완성<i
+                                class="imgsvg ico_help">도움말</i></a>
+                          </div>
+                          <div class="switch">
+                            <a role="button" href="#" class="bt_switch active _plus_btn" aria-pressed="false"><i
+                                class="imgsvg ico_option">컨텍스트 자동완성</i></a>
+                          </div>
+                          <div class="layer_plus _plus_layer">
+                            <strong class="tit">컨텍스트 자동완성</strong>
+                            <div class="_plus_layer_isloggedin" style="display: none">
+                              <p class="dsc">
+                                ON/OFF 설정은 해당기기(브라우저)에 저장됩니다.
+                              </p>
+                              <div class="btn_area">
+                                <a href="https://help.naver.com/alias/search/word/word_16.naver" class="link_view"
+                                  data-clk="sug.cxlink" target="_blank">자세히 보기</a>
+                              </div>
+                            </div>
+                            <div class="_plus_layer_isnotloggedin" style="display: none">
+                              <p class="dsc">
+                                동일한 시간대・연령대・남녀별 사용자 그룹의
+                                관심사에 맞춰 자동완성을 제공합니다.
+                                <a href="https://help.naver.com/support/alias/search/word/word_16.naver"
+                                  class="link_view" data-clk="sug.cxlink" target="_blank">자세히 보기</a>
+                              </p>
+                              <div class="btn_area">
+                                <a href="https://nid.naver.com/nidlogin.login" class="btn btn_login"
+                                  data-clk="sug.cxlogin"><i class="imgsvg ico_naver">네이버</i>로그인</a>
+                              </div>
+                            </div>
+                            <a href="#" role="button" class="btn_close _plus_layer_close"><i
+                                class="imgsvg ico_close">컨텍스트 자동완성 레이어 닫기</i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="atcmp_footer">
+                        <span class="side_opt_area">
+                          <span class="opt_item">
+                            <a href="#" class="close _suggestOnOff">자동완성 끄기</a>
+                          </span>
+                          <span class="opt_item"><a href="https://help.naver.com/alias/search/word/word_17.naver"
+                              data-clk="sug.help" target="_blank">도움말</a></span>
+                          <span class="opt_item"><a href="https://help.naver.com/alias/search/word/word_18.naver"
+                              class="report" data-clk="sug.report" target="_blank">신고</a></span>
+                        </span>
+                        <span class="rside_opt_area">
+                          <span class="opt_item"><a href="#" class="close _close">닫기</a></span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="search-right-banner">
+          <a href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_ros&amp;fbm=0&amp;ie=utf8&amp;query=4.19%ED%98%81%EB%AA%85+%EA%B8%B0%EB%85%90%EC%9D%BC"
+            class="link_search_banner" target="_blank"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20240402_1095/upload_1711986048456K2Loh.png" width="162"
+              height="40" alt="4.19혁명 기념일" /></a>
+        </div>
+        <div id="shortcutArea" class="shortcut_area type_recommend" role="navigation" aria-label="주요 서비스">
+          <ul class="shortcut_list">
+            <li class="shortcut_item">
+              <a href="https://mail.naver.com" class="link_service" target="_blank"><span
+                  class="service_icon type_mail"></span><span class="service_name">메일</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://cafe.naver.com" class="link_service" target="_blank"><span
+                  class="service_icon type_cafe"></span><span class="service_name">카페</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://blog.naver.com" class="link_service" target="_blank"><span
+                  class="service_icon type_blog"></span><span class="service_name">블로그</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://shopping.naver.com/home" class="link_service" target="_blank"><span
+                  class="service_icon type_shopping"></span><span class="service_name">쇼핑</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://news.naver.com/" class="link_service" target="_blank"><span
+                  class="service_icon type_news"></span><span class="service_name">뉴스</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://finance.naver.com/" class="link_service" target="_blank"><span
+                  class="service_icon type_stock"></span><span class="service_name">증권</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://land.naver.com/" class="link_service" target="_blank"><span
+                  class="service_icon type_real"></span><span class="service_name">부동산</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://map.naver.com" class="link_service" target="_blank"><span
+                  class="service_icon type_map"></span><span class="service_name">지도</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://comic.naver.com" class="link_service" target="_blank"><span
+                  class="service_icon type_webtoon"></span><span class="service_name">웹툰</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="https://chzzk.naver.com/" class="link_service" target="_blank"><span class="service_icon"><img
+                    src="https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png"
+                    width="44" height="44" class="service_img" alt="치지직" /></span><span
+                  class="service_name">치지직</span></a>
+            </li>
+            <li class="shortcut_item">
+              <a href="#" class="link_service" role="button"><span class="service_icon type_more"></span><span
+                  class="blind">바로가기</span></a>
+            </li>
+          </ul>
+        </div>
+        <div id="topAsideArea" class="menu_area">
+          <button id="topAsideButton" type="button" class="btn_menu" aria-haspopup="menu" aria-expanded="false">
+            <span class="blind">확장 영역</span>
+          </button>
+        </div>
+        <div id="topPayArea" class="pay_area">
+          <a href="https://order.pay.naver.com/home" class="link_pay" target="_blank"><span class="blind">페이
+              바로가기</span></a>
+        </div>
+        <div id="topTalkArea" class="talk_area">
+          <button type="button" class="btn_talk" aria-haspopup="menu" aria-expanded="false">
+            <span class="blind">톡</span>
+          </button>
+        </div>
+        <div id="topNotiArea" class="notify_area">
+          <button type="button" class="btn_notify" aria-haspopup="menu" aria-expanded="false">
+            <span class="blind">알림</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="container" role="main">
+      <svg id="timeboard-svg" width="972" height="474">
+        <defs>
+          <filter x="-20.3%" y="-68.2%" width="140.7%" height="236.4%" id="blur">
+            <feGaussianBlur stdDeviation="50"></feGaussianBlur>
+          </filter>
+        </defs>
+        <ellipse filter="url(#blur)" cx="486" cy="237" rx="369" ry="110" fill="#fff" fill-rule="evenodd" opacity="0.02">
+        </ellipse>
+      </svg>
+      <div id="root">
+        <div class="Layout-module__column_left___tLO23">
+          <div id="newsstand" class="Layout-module__content_area___b_3TU" role="region" aria-label="뉴스스탠드">
+            <div class="ContentHeaderView-module__content_header___nSgPg">
+              <div class="ContentHeaderView-module__header_tab___WW6fU">
+                <ul class="ContentHeaderView-module__tab_list___BWrWe" role="tablist">
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <span class="ContentHeaderView-module__tab___uYoNi type_news"><a href="#"
+                        class="ContentHeaderView-module__tab_text___IuWnG" role="tab" aria-selected="true">뉴스스탠드</a><a
+                        href="#" class="ContentHeaderView-module__tab_text___IuWnG" role="tab"
+                        aria-selected="false">언론사편집</a></span>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">엔터</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">경제</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">쇼핑투데이</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://sports.news.naver.com/kfootball/index" target="_blank"
+                class="ContentHeaderView-module__link_event___EXCVn"><img
+                  src="https://s.pstatic.net/static/www/mobile/edit/20240325_1095/upload_1711359316701UQi28.png"
+                  height="19" alt="AFC U23" /></a>
+            </div>
+            <div class="ContentHeaderSubView-module__content_header_sub___Yszwk">
+              <a href="#" class="ContentHeaderSubView-module__btn_more___HnWNR" role="button" aria-haspopup="listbox"
+                aria-expanded="false" aria-pressed="false">구독언론사<i
+                  class="ContentHeaderSubView-module__ico_triangle___ObyFF"></i></a>
+              <div class="ContentHeaderSubView-module__sub_news___DECMU">
+                <a href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y"
+                  target="_blank" class="ContentHeaderSubView-module__news_media___YJm6A">연합뉴스</a>
+                <div class="ContentHeaderSubView-module__news_box___dH9b3">
+                  <div class="AutoRolling-module__rolling-y___T3kmw" style="animation-duration: 0.5s">
+                    <div class="ContentHeaderSubView-module__news_desc___ztwqZ">
+                      <div class="ContentHeaderSubView-module__news_title___wuetX">
+                        <a href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0014641512"
+                          target="_blank">[2보] 공수처, '골프접대 의혹' 이영진 헌법재판관
+                          무혐의</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="AutoRolling-module__rolling-y___T3kmw" style="animation-duration: 0.5s">
+                    <div class="ContentHeaderSubView-module__news_desc___ztwqZ">
+                      <div class="ContentHeaderSubView-module__news_title___wuetX">
+                        <a href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0014641369"
+                          target="_blank">與 낙선자들 "용산과 관계가 문제…당이 목소리
+                          냈어야"</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ContentHeaderSubView-module__sub_home___QWIkL">
+                <a href="https://newsstand.naver.com/" target="_blank"
+                  class="ContentHeaderSubView-module__link_home___hdZDg ContentHeaderSubView-module__sub___T9JeN">뉴스스탠드</a><a
+                  href="https://news.naver.com/" target="_blank"
+                  class="ContentHeaderSubView-module__link_home___hdZDg">뉴스홈</a>
+              </div>
+            </div>
+            <div class="MediaView-module__media_area___Z4js3" role="tabpanel">
+              <div class="MediaOptionView-module__media_option___hieAM">
+                <div class="MediaOptionView-module__option_box___YV19l">
+                  <ul class="MediaOptionView-module__option_list___gSCb_" role="tablist">
+                    <li class="MediaOptionView-module__option_item___TytUT" role="presentation">
+                      <a href="#" class="MediaOptionView-module__link_item___thVcT" role="tab"
+                        aria-selected="true"><span class="MediaOptionView-module__text___Jv1ck">국민일보</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="MediaOptionView-module__option_info___pZ1ZS">
+                  구독중
+                  <span class="MediaOptionView-module__count___O1KBN">1</span><a
+                    href="https://newsstand.naver.com/config.html" class="MediaOptionView-module__link_option___GW3ie"
+                    target="_blank"><span class="blind">구독설정</span></a>
+                </div>
+              </div>
+              <div class="MediaNewsView-module__media_news___AiQyW">
+                <div class="MediaNewsView-module__news_top___KTy0M">
+                  <a target="_blank" href="https://newsstand.naver.com/005"
+                    class="MediaNewsView-module__news_logo___LwMpl"><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/dark/0604/005.png" height="20" width="auto"
+                      alt="국민일보" /></a><span class="MediaNewsView-module__news_text___hi3Xf"><span
+                      class="MediaNewsView-module__time___fBQhP">04월 19일 11:35 직접 편집</span></span><button type="button"
+                    class="MediaNewsView-module__btn_cancel____bfsE" aria-pressed="false">
+                    <span class="blind">구독취소</span>
+                  </button>
+                </div>
+                <div class="MediaNewsView-module__news_desc___a55y9">
+                  <div class="MediaNewsView-module__desc_left___jU94v">
+                    <a target="_blank"
+                      href="https://www.kmib.co.kr/article/view.asp?arcid=0020014932&amp;code=61111111&amp;sid1=pol&amp;cp=nv2"
+                      class="MediaNewsView-module__link_thumb___rmMr4"><span class="ImgView-module__content_img___QA0gl"
+                        style="width: 201px; height: 134px"><img
+                          src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fnewsstand%2F2024%2F0419%2Farticle_img%2Fnew_main%2F9002%2F114250_001.jpg%22&amp;type=nf312_208&amp;service=navermain"
+                          width="201" height="134" alt="정부, 의대 증원 규모 조정하나…오후 韓총리 브리핑" /></span></a><a target="_blank"
+                      href="https://www.kmib.co.kr/article/view.asp?arcid=0020014932&amp;code=61111111&amp;sid1=pol&amp;cp=nv2"
+                      class="MediaNewsView-module__desc_title___IObEv"></a>
+                  </div>
+                  <div class="MediaNewsView-module__desc_right___xZQJb">
+                    <ul class="MediaNewsView-module__desc_list___uQ3r1">
+                      <li class="MediaNewsView-module__desc_item___OWjz3">
+                        <a target="_blank"
+                          href="https://www.kmib.co.kr/article/view.asp?arcid=0020014982&amp;code=61131111&amp;sid1=int&amp;cp=nv2"
+                          class="MediaNewsView-module__link_item___x0z7x"></a>
+                      </li>
+                      <li class="MediaNewsView-module__desc_item___OWjz3">
+                        <a target="_blank"
+                          href="https://www.kmib.co.kr/article/view.asp?arcid=0020014023&amp;code=61121111&amp;sid1=soc&amp;cp=nv2"
+                          class="MediaNewsView-module__link_item___x0z7x"></a>
+                      </li>
+                      <li class="MediaNewsView-module__desc_item___OWjz3">
+                        <a target="_blank"
+                          href="https://www.kmib.co.kr/article/view.asp?arcid=0020014233&amp;code=61121311&amp;sid1=soc&amp;cp=nv2"
+                          class="MediaNewsView-module__link_item___x0z7x"></a>
+                      </li>
+                      <li class="MediaNewsView-module__desc_item___OWjz3">
+                        <a target="_blank"
+                          href="https://www.kmib.co.kr/article/view.asp?arcid=0020014790&amp;code=61131511&amp;sid1=int&amp;cp=nv2"
+                          class="MediaNewsView-module__link_item___x0z7x"></a>
+                      </li>
+                      <li class="MediaNewsView-module__desc_item___OWjz3">
+                        <a target="_blank"
+                          href="https://www.kmib.co.kr/article/view.asp?arcid=0020013954&amp;code=61171811&amp;sid1=lif&amp;cp=nv2"
+                          class="MediaNewsView-module__link_item___x0z7x"></a>
+                      </li>
+                      <li class="MediaNewsView-module__desc_item___OWjz3">
+                        <a target="_blank"
+                          href="https://www.kmib.co.kr/article/view.asp?arcid=0020014423&amp;code=61121111&amp;sid1=soc&amp;cp=nv2"
+                          class="MediaNewsView-module__link_item___x0z7x"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ContentPagingView-module__content_paging___QIMwB">
+              <div class="ContentPagingView-module__content_view___SdRjS" role="radiogroup">
+                <button type="button" class="ContentPagingView-module__btn_view_list___j7eNR" role="radio"
+                  aria-checked="true">
+                  <span class="blind">리스트형</span></button><button type="button"
+                  class="ContentPagingView-module__btn_view_thumb___zZhgR" role="radio" aria-checked="false">
+                  <span class="blind">썸네일형</span>
+                </button>
+              </div>
+              <button type="button" class="ContentPagingView-module__btn_prev___JaBFN">
+                <span class="blind">이전 페이지</span>
+              </button>
+              <div class="ContentPagingView-module__content_page___ZM2wA">
+                <span class="ContentPagingView-module__text___uJNhb"><span
+                    class="ContentPagingView-module__point___U2tUD">다른 언론사 뉴스</span>
+                  더보기</span><span class="current">1<span class="blind">페이지</span></span><span
+                  class="ContentPagingView-module__total___HUvt2"><span class="blind">전체</span>/1</span>
+              </div>
+              <button type="button" class="ContentPagingView-module__btn_next___ZBhby">
+                <span class="blind">다음 페이지</span>
+              </button>
+            </div>
+          </div>
+          <div id="shopping" class="Layout-module__content_area___b_3TU" role="region" aria-label="쇼핑">
+            <div></div>
+            <iframe title="shoppingbox" src="https://shopsquare.naver.com/"
+              style="width: 831px; height: 560px"></iframe>
+          </div>
+          <div id="feed" class="Layout-module__content_area___b_3TU id_recipe" role="region" aria-label="추천 관심사">
+            <div class="ContentHeaderView-module__content_header___nSgPg">
+              <div class="ContentHeaderView-module__header_tab___WW6fU">
+                <ul class="ContentHeaderView-module__tab_list___BWrWe" role="tablist">
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <span class="ContentHeaderView-module__tab___uYoNi"><a href="#"
+                        class="ContentHeaderView-module__tab_text___IuWnG" role="tab"
+                        aria-selected="false">추천<em>・</em>구독</a></span>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">자동차</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">웹툰</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">패션뷰티</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="true">레시피</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">리빙</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">책방</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">지식+</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">건강</a>
+                  </li>
+                  <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation">
+                    <a href="#" class="ContentHeaderView-module__tab___uYoNi" role="tab" aria-selected="false">게임</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="feed_area" role="tabpanel">
+              <div class="feed_box">
+                <ul class="HighlightedColumnView-module__common_highlighted_list___ahUrf">
+                  <li
+                    class="HighlightedColumnView-module__common_highlighted_item___CNhUf HighlightedColumnView-module__type_three___GZCYP">
+                    <a target="_blank" href="https://blog.naver.com/sweetiekiss/223411820331"
+                      class="HighlightedColumnView-module__link_item___kx28e">
+                      <div class="HighlightedColumnView-module__thumb___IN5Mg">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 144px"><img
+                            src="https://s.pstatic.net/static/www/mobile/edit/20240418_1095/upload_1713437479056YbI64.jpg"
+                            width="100%" height="144" loading="lazy" /></span>
+                      </div>
+                      <div class="HighlightedColumnView-module__text_color___ZRDm8 common_em">
+                        레시피 집중탐구
+                      </div>
+                      <strong
+                        class="HighlightedColumnView-module__title___YGJU_ HighlightedColumnView-module__type_ellipsis___QtML3">봄나물
+                        파스타</strong>
+                      <div class="HighlightedColumnView-module__sub___AbKQL">
+                        제철 나물과 주꾸미<br />맛있게 담은 한 그릇 요리
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="HighlightedColumnView-module__common_highlighted_item___CNhUf HighlightedColumnView-module__type_three___GZCYP">
+                    <a target="_blank"
+                      href="https://post.naver.com/viewer/postView.naver?volumeNo=37581289&amp;memberNo=15460571"
+                      class="HighlightedColumnView-module__link_item___kx28e">
+                      <div class="HighlightedColumnView-module__thumb___IN5Mg">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 144px"><img
+                            src="https://s.pstatic.net/static/www/mobile/edit/20240418_1095/upload_1713430548311SDXJY.jpg"
+                            width="100%" height="144" loading="lazy" /></span>
+                      </div>
+                      <div class="HighlightedColumnView-module__text_color___ZRDm8 common_em">
+                        푸드스토리
+                      </div>
+                      <strong
+                        class="HighlightedColumnView-module__title___YGJU_ HighlightedColumnView-module__type_ellipsis___QtML3">배달
+                        치킨보다 반값! 인기 폭발 냉동 치킨</strong>
+                      <div class="HighlightedColumnView-module__sub___AbKQL">
+                        골라 먹는 재미까지<br />부담 없이 즐기기 최고
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="HighlightedColumnView-module__common_highlighted_item___CNhUf HighlightedColumnView-module__type_three___GZCYP">
+                    <a target="_blank" href="https://tv.naver.com/v/49895048"
+                      class="HighlightedColumnView-module__link_item___kx28e">
+                      <div class="HighlightedColumnView-module__thumb___IN5Mg">
+                        <span class="ImgView-module__content_img___QA0gl ImgView-module__type_gradient___wrDaw"
+                          style="width: 100%; height: 144px"><img
+                            src="https://s.pstatic.net/static/www/mobile/edit/20240418_1095/upload_17134308683248l6pJ.jpg"
+                            width="100%" height="144" loading="lazy" /></span><span
+                          class="PlayTimeView-module__playtime___mjsCW"><span class="blind">재생시간</span><span
+                            class="time">00:48</span></span>
+                      </div>
+                      <div class="HighlightedColumnView-module__text_color___ZRDm8 common_em">
+                        오늘의 푸드TV
+                      </div>
+                      <strong
+                        class="HighlightedColumnView-module__title___YGJU_ HighlightedColumnView-module__type_ellipsis___QtML3">다이어트
+                        만능 소스, 캐슈너트 마요네즈</strong>
+                      <div class="HighlightedColumnView-module__sub___AbKQL">
+                        샌드위치나 샐러드에 딱!<br />어렵지 않게 따라 해
+                        보세요
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="feed_box feed-two-column">
+                <ul class="TwoColumnView-module__common_list___vTX41">
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/bongsrecipe/contents/internal/666272278015904">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMjdfMjE2%2FMDAxNzA4OTYzMzczMDU1.h7OIkmxkoyDFsK0GMSckvR5BF_K0GGR9uc4DUwthngog.PONGao6FO-55M4sAkVXk84Dikxsw__GOwUbbFQLWeH0g.JPEG%2F9IMG_9503.JPG%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">빨간 콩나물무침 레시피 만드는법 매운 콩나물무침
+                          만들기 콩나물 삶는시간 반찬</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20160617_20%2Fbongs1021_1466126167332UzPOp_JPEG%2F11gIMG_1343.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">봉스</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/peace8012/contents/internal/682781072565088">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTNfMTMy%2FMDAxNzEyOTkyODEwNzA4.IuO41KLpu71MZqY4CDPEGI98M_SAQx4TJ_Z7xIq9YG0g.Bw6CYYO5G_AQ0GV6VscjJZCnWJGXuOysZ1pQt06sYu4g.JPEG%2FIMG_3339.JPG%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">편스토랑 류수영 두부김치 만드는법 어남선생
+                          두부김치볶음 레시피</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTA3MDFfMzAg%2FMDAxNjI1MTM5MDE5NTEy.251VgdvleOVztmbMivfEbKRCQoPfkNpcfFEYMVv6ciUg.bLtjCuOe0dCzsXBuoSYxpyMFVfc-wvIZ3rXVP_ht_Okg.JPEG.peace8012%2FprofileImage.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">레즐리</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/bongsrecipe/contents/internal/677620365328960">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzBfMjcg%2FMDAxNzExNzMyNDIwNzg2.aRcNfTFK3-i8F5PlJpn0GVZya0Ln4fqTZhV-rUGpVugg.Er_nCTuMn-EFkuNanJ26sGGej10oM61FyGzcJK-OKBwg.JPEG%2F1IMG_7518.JPG%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">백종원 김치 비빔국수 레시피 초간단 비빔국수 양념장
+                          만들기 만드는법</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20160617_20%2Fbongs1021_1466126167332UzPOp_JPEG%2F11gIMG_1343.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">봉스</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <div id="pc-main-ad-div-p_main_recipe-0" data-hide-last-sibling="true" data-ad-bind-called="true">
+                      <div style="
+                            width: 100%;
+                            height: auto;
+                            margin: 0px auto;
+                            line-height: 0;
+                          ">
+                        <iframe id="pc-main-ad-div-p_main_recipe-0_tgtLREC" frameborder="no" scrolling="no" tabindex="0"
+                          name="" title="AD" style="
+                              width: 100%;
+                              height: 100px;
+                              visibility: inherit;
+                              border: 0px;
+                              vertical-align: bottom;
+                            "></iframe>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/three_choi/contents/internal/677017093161504">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMjhfMjQw%2FMDAxNzExNTg0NDQwMzQx.5JranpiB9WppED_FArAJOClrnaUj1dqQfbYtojJh1hYg.gVkX_0G0LAbl_dXO9YTZR5vvYaMs3pFHP_lmRkRkPOEg.JPEG%2F1.jpg%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">간장 돼지갈비찜 만드는법 갈비찜 양념 레시피 맛있게
+                          만들기</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA0MTFfMjQg%2FMDAxNjQ5NjQ0Mjc1OTkz.ye18Bso8CvgZzVjeIpE0EuNPRvpe4iv_030G2VrC8gcg.GD3cuhzm5xmAapvU_jn7z53yuELGR9q7lgIxcE1KXcMg.JPEG.qkqh8480%2FprofileImage.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">최쓰리</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/loveiskook/contents/internal/684309408556480">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTdfMjI0%2FMDAxNzEzMzQzMjEwMzg0.2M6syFygAw-Q-Oj4zgtbpIiLKt7dnaP2U0XhuP31zjcg.3C83jIDpvnMvnv8l4l-zOX_pS-k60uDeO9gB1LiHk4Qg.JPEG%2F20240417_%EB%91%90%EB%B6%80%EA%B9%80%EC%B9%98.jpg%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">편스토랑 류수영 두부김치 레시피 두부 데치는 법
+                          들기름 김치볶음 참치액 요리</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20150326_14%2Floveiskook_1427342977814ex2oO_JPEG%2F63378.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">까칠감성</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/kimhy004/contents/internal/678852632412672">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDJfMTY0%2FMDAxNzEyMDMzODAzODky.PW_ivP4zCXbuOtosJ_WZdwnNMu1HEGJI2uIYKqFofNkg.39AYxv2x0giXgQogvFkcsk-y64AW6UzdaT4vQ9nPvE0g.PNG%2FDSCF7687.png%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">쫀득한 연근조림 만드는 법 쫀득 아삭한 연근조림
+                          레시피</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTAyMjhfOTkg%2FMDAxNjE0NDk5NTcyNDk2._ES4AtEAN48PEwXn0Zb8GBiLOY9Npx3HG0cOTnxk3m0g.StPfXxcFKN_KsKLXu_FAYUIR3NY3rwjeanSckXHTcuQg.JPEG.kimhy004%2Fbeauty_16%252816%2529_6.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">들꽃향기</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/jasmin7141/contents/internal/656580189887200">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMjhfNTIg%2FMDAxNzA2NDQyMzI0NDA4.KrukfobWRR_n3gN39_lCqC9zlNHhP53QtyomBPE-Bp8g.3tNGjlgv1Y2zKY4xw54veJ8d7hWIIb18oTs51Lxqo-Eg.JPEG.jasmin7141%2FKakaoTalk_20240121_204603747_18.jpg%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">새해 멸치육수 떡국 끓이는법 황태 떡만두국 레시피
+                          떡만둣국 만들기</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20180723_39%2Fjasmin7141_1532274619799rvpyv_JPEG%2Fimage.JPEG%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">낭랑주부</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="TwoColumnView-module__common_item___F9hlW" style="display: none">
+                    <a class="TwoColumnView-module__link_item___iskRk" target="_blank"
+                      href="https://in.naver.com/sallee_jaeryun/contents/internal/680305921606144">
+                      <div class="TwoColumnView-module__thumb___kADOh">
+                        <span class="ImgView-module__content_img___QA0gl" style="width: 154px; height: 100px"><img
+                            src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDZfMjQy%2FMDAxNzEyMzg5MjAyMTc0.lOwl1CanyZi4ex0GlkSA70lbFsOwuZrpQ5oosorwcoog.nLTxgcNZgMtN3OSh9b0u04ntzgv1VFMmDqzTHpcy1_sg.JPEG%2FDSC_0417.JPG%22&amp;type=nf308_200&amp;service=navermain"
+                            width="154" height="100" loading="lazy" /></span>
+                      </div>
+                      <div class="TwoColumnView-module__info___xtBXO">
+                        <strong class="TwoColumnView-module__title___eNSvG">풀없이 깍두기담그는법 간단 깍두기 담그기 설렁탕집
+                          무김치 만들기</strong>
+                        <div class="TwoColumnView-module__source_box___fKoNB">
+                          <span class="TwoColumnView-module__source___hshTP"><span
+                              class="TwoColumnView-module__thumb___kADOh"><img
+                                src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20210419_199%2Fmoonra84_1618812430262R0pzc_JPEG%2Fprofileimage.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                width="20" height="20" class="TwoColumnView-module__channel_img___Lz4iz" /></span><span
+                              class="name">살리재련</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="feed_box feed-four-column">
+                <div class="FourColumnView-module__feed_title_wrap___vlvS0">
+                  <strong class="FourColumnView-module__feed_title___RtLFW">테마별 레시피</strong>
+                </div>
+                <div class="FourColumnView-module__list_wrap___caAIA FourColumnView-module__type_scroll___TJOBT">
+                  <ul class="FourColumnView-module__common_list___daDm_" style="
+                        transform: translateX(0%);
+                        transition: all 0.3s ease 0s;
+                      ">
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/koyunj0723/contents/internal/651235593746816"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMTVfNSAg%2FMDAxNzA1MjkxODgxNzc1.XA6Bgibp7hplRQtkm0AiwHXfNseyn9jsJVLcs1ZAWr4g.r85GG-NmbEtaxKLIDX3VPnANHFMLQfN6O-s5NgPOA80g.JPEG.koyunj0723%2F%EA%BC%AC%EB%A7%88%EA%B9%80%EB%B0%A516.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한도시락
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">당근 어묵 꼬마김밥 만들기 묵은지 김밥 맛있게
+                            싸는법 간단한도시락 메뉴</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTEwMjVfMjE5%2FMDAxNjM1MTYwMjk1ODMz.5fGb9yJVZ6KpnzXbPz0bSaHKx3QcV0qNuAIyo5DyTt8g.HNzKpJxxjCj8f6-uj3mJTKTQAZW-3CHtoXOQ2xtHKU8g.PNG.koyunj0723%2FprofileImage.png%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="윤줌마" /></span><span class="name">윤줌마</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/kimhy004/contents/internal/672048489586176"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTNfMjg1%2FMDAxNzEwMzM5NzY0MDQ5.QVGLNPWinPSlqkDmzMVGhU-cIULuFtrI5Fg6S__xOo0g.mnQ4nNIxvcbpyAzTd-Wz9BuD4kVCb4jmO0oNfkGVTAQg.PNG%2FDSCF3616.png%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #도시락반찬
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">직장인 점심 도시락 반찬 메뉴 모음 직장인 도시락
+                            싸기</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTAyMjhfOTkg%2FMDAxNjE0NDk5NTcyNDk2._ES4AtEAN48PEwXn0Zb8GBiLOY9Npx3HG0cOTnxk3m0g.StPfXxcFKN_KsKLXu_FAYUIR3NY3rwjeanSckXHTcuQg.JPEG.kimhy004%2Fbeauty_16%252816%2529_6.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="들꽃향기" /></span><span class="name">들꽃향기</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://blog.naver.com/cookingsunny512/223410496552"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDdfMjE0%2FMDAxNzEyNTAwNDc2OTEz.QF9QrFa-9fkd269qq0_d8FLiYmQ_11oJbhRceHVPSBgg.AYLkDDlzdtGhxMv-oxOEo_o6CpKYGnPeR87HznMdfDQg.JPEG%2FIMG_5264.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한도시락
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">간단한 4가지 재료만 넣고 쉽고 맛있는 참치
+                            꼬마김밥 만들기 간단한 김밥 싸는법</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjEwMTdfMjgg%2FMDAxNjY1OTkzNjAxMTAw.K8va6aVzPPNG2wIFmHPt59A0XLZzact7uZEDtM5XGGgg.e-wjUhmN3GVz53sRbnqKC0whYDrwIj9WPC4eQEdc0D0g.PNG.cookingsunny512%2FprofileImage.png%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="쿠킹써니" /></span><span class="name">쿠킹써니</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/naya399/contents/internal/679506969150464"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDRfMjY5%2FMDAxNzEyMTk1NDA2MTc3.hU2aWo59omIP7WwdhaTEwg2nIzf0obo4jwQJdp4oUJog.y5IPyj2sYqGnKfKJZenaxY_OOUHIAZwHZFAZTqHkTWUg.JPEG%2F%EC%96%91%EB%B0%B0%EC%B6%94_%EA%B3%84%EB%9E%80%EB%B3%B6%EC%9D%8C%EB%B0%A5_%283%29.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한볶음밥
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">양배추 계란 볶음밥 만드는법 간단한 다이어트
+                            양배추볶음밥 다이어트 요리 레시피</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20160124_124%2Fnaya399_1453604108367Th0tf_JPEG%2F%25C5%25A9%25B1%25E2%25BA%25AF%25C8%25AF_IMG_3523.JPG%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="칼라" /></span><span class="name">칼라</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/moeja/contents/internal/678271354307104"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfMTI3%2FMDAxNzExODg4NDQxNDcy.6Mlgs1o4MCDl9mFN_30eg87mI0p8_y4QjulS_N0f7sQg.XmIJx7_rbxt8t8CVDfm-kdncth625V_pv2Cos2ns1lcg.JPEG%2F%EB%82%A8%ED%8E%B8%EB%8F%84%EC%8B%9C%EB%9D%BD%EB%B0%98%EC%B0%AC_%EC%9D%BC%EC%A3%BC%EC%9D%BC%EB%B0%98%EC%B0%AC_%EB%B0%91%EB%B0%98%EC%B0%AC%EB%A7%8C%EB%93%A4%EA%B8%B0_%2876%29.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #남편도시락반찬
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">3월의 남편도시락반찬(일주일 밑반찬만들기)</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTEwMjRfMjM5%2FMDAxNjM1MDExMTQzNjA2.iteDG61fL2VfVGVHvoTxKgCsQgg37b89vBkkZEa0MHYg.rRjwplXx-WJY6ODXdIp9Dn14Yvs-az0XR4f83uFhyrIg.PNG.moeja%2F1629695456324.png%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="놀자비나리" /></span><span class="name">놀자비나리</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/bongsrecipe/contents/internal/671084157407168"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTFfOTcg%2FMDAxNzEwMTMyOTg0MDYy.hLHK7t8XbOwcdw75Rj56NqduV4paLSZndmn4xjYJVA0g._3slD8cOSNYtmgb8G7_TTefL-y6ZfXwvHNTcMuw5atUg.JPEG%2FaIMG_9344.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #안주추천
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">새우 달래전 만드는 법 달래 요리 손질법 막걸리
+                            안주 추천</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20160617_20%2Fbongs1021_1466126167332UzPOp_JPEG%2F11gIMG_1343.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="봉스" /></span><span class="name">봉스</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/love2020/contents/internal/682397146804736"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTJfMjg2%2FMDAxNzEyODc3NTY5NTk5._ZvPFOtfh9UKCJ0kNiGFfrtXQYnX5vCAXs730wDaPqUg.qAXaC78hJcwkfTiTn8bWCTmsD-SgMAos1reEUQx0gtIg.JPEG%2F%EC%98%A4%EC%9D%B4%EB%8F%84%EB%9D%BC%EC%A7%80%EB%AC%B4%EC%B9%A830.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #채소반찬
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">도라지오이무침 채소반찬 오이 도라지무침 만드는법
+                            도라지쓴맛제거 도라지요리</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMDA0MDdfMTU4%2FMDAxNTg2MjM0OTA1ODIw.GQTRUQQecjeQS9-oc8q5W1XLt-VM0EXSlJBGIdD6gaIg.E2qCgwP7N2X3iDIU9quiRIIyeveniXi_ZmYQWl3A6ugg.JPEG.uggang2%2F2.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="깡이맘" /></span><span class="name">깡이맘</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/annyeong/contents/internal/670324720025088"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMDlfMjA2%2FMDAxNzA5OTUyOTEzMTY4.pwvUmYpVdt2X0L36oJnIywKy9thlq-Gz74nicGLA3xkg.MKf_AEtSdPxqyKgc_nVVDBx1gUoQCsr54VCdzY7LLvUg.JPEG%2F20240309%EF%BC%BF114623.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한볶음밥
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">미나리볶음밥, 특색 있는 간단한 볶음밥
+                            한그릇요리로 추천</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMzAzMTlfMTY5%2FMDAxNjc5MjA5NTM3OTkx.GbIdvAyz-qhoD52UqppxdNn1U85SzeuuDa5-bKIYNK4g.IIygYgL_m5qC_Q5zZFxuIpkuPww8EDhBq-bcfWfg8Dwg.JPEG.maroyang%2FSE-b062b98e-68b6-11ed-9ccf-81dadd4877c9.jpg%2FSE-b062b98e-68b6-11ed-9ccf-81dadd4877c9.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="안녕레시피" /></span><span class="name">안녕레시피</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/ryuyi/contents/internal/657375604173856"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMDFfMzkg%2FMDAxNzA2Nzg3NDI1Njkw.EJvanXnVJzKA7dR5ruTpaTZnZ8XHGlVux9FTtfsUvm0g.59BmZIrq408OphV9Xudoi7bgWld27sYIfO23PDUvN6Eg.JPEG.76boragom%2F20240131%EF%BC%BF130003.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한볶음밥
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">봉지 라면볶음밥 레시피 까르보불닭볶음밥 라밥
+                            만들기 라면밥 간단한 볶음밥</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTEyMTNfMjI4%2FMDAxNjM5MzIyOTI1Mjg1.TsrpVCgRQ_yQoAjoSKpffG0kMN3kj678jCUH5Jgfg0og.cY84JUsH-IapbMU-MyTeilkoI70uPV7Fg1HWUJ8zSiQg.JPEG.76boragom%2FprofileImage.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="류이" /></span><span class="name">류이</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://blog.naver.com/tyrema/223369433465"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMjlfMTAg%2FMDAxNzA5MjExODg1ODMy.SGVbxfKYL_OQQ4b-O4BBdovOGepLO5aceXBbmxKKKPYg.MDpX95HraT3ARhnmpYVFRcF7Q2-V-HWMcmTwx2_yETQg.PNG%2F%EC%8D%B8%EB%84%A4%EC%9D%BC_%EB%B0%94%28%EB%B8%8C%EB%A6%AC%EC%B9%98%EC%A6%88%EC%82%AC%EA%B3%BC%29.png%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #안주만들기
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">브리치즈구이 만들기 오븐 사과 곁들인
+                            와인안주</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyNDAxMTNfNzcg%2FMDAxNzA1MTE2ODUzMjkx.2QLFK3zXEAxt415Dyrjad23cKKDFN7SKD-tU_WltDL8g.pTWguVjQ8dVh0Slk4DprVvH-mHMAd2QUenOMJQWfIFMg.JPEG.ntsales3%2FprofileImage.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="요리이지" /></span><span class="name">요리이지</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/love2020/contents/internal/673200896814656"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTdfNDIg%2FMDAxNzEwNjM1MzU3NTM5._SNyuVkQcqdFcikfcRIdcc-NXYgnMpqnJvavhS6lL6Eg.0ds__ItGpznkP43KE1FkMFoIH4hzz1R2ar52KBjmiC4g.JPEG%2F%EB%8F%84%EC%8B%9C%EB%9D%BD%EB%B0%98%EC%B0%AC%EC%95%BC%EC%B1%84%EA%B3%84%EB%9E%80%EB%A7%90%EC%9D%B419.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #남편도시락반찬
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">야채계란말이 남편 도시락반찬 맛살 계란말이
+                            만드는법 키토식 다이어트 메뉴</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMDA0MDdfMTU4%2FMDAxNTg2MjM0OTA1ODIw.GQTRUQQecjeQS9-oc8q5W1XLt-VM0EXSlJBGIdD6gaIg.E2qCgwP7N2X3iDIU9quiRIIyeveniXi_ZmYQWl3A6ugg.JPEG.uggang2%2F2.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="깡이맘" /></span><span class="name">깡이맘</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/a0910102/contents/internal/683341068935456"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDhfMjM5%2FMDAxNzEyNTM0NzAyMTY1.nF8Oqdydx1Vs6fyMUECwuHKp9zHfj_Nzcjp5PQSVBoUg.98aE0ntWbgTkWLAvASePmmiwiy6rvnOj1PIiU02zCgQg.JPEG%2F20240304_072853-tile.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #점심도시락메뉴
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">점심도시락메뉴 간편 일주일 도시락추천 직장인
+                            샐러드 수제 도시락싸기</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20100322_16%2Fa0910102_1269218938229_0aDs4s_jpg%2F11.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="윌리쥴리맘" /></span><span class="name">윌리쥴리맘</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/blessed_life/contents/internal/656814253247616"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMjlfNzYg%2FMDAxNzA2NDg3OTI3ODUw.4SE1kcJRrzEDmOtKZeH3p_1g3Iw6TL_PHNxOvFliG5kg.alqloxB_XQJ_ATNUDz3Ob12H36JA8V26ghXkbrJYYXgg.JPEG.catseyesung%2F%ED%9B%88%EC%A0%9C%EC%97%B0%EC%96%B4%EB%B2%A0%EC%9D%B4%EA%B8%801.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #홈브런치
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">훈제연어 베이글 샌드위치 만드는 법 홈브런치
+                            훈제연어요리 레시피</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMzExMjZfMjA5%2FMDAxNzAwOTc1NDU2MTIx.F13uTy-08qfYOBnf-EesFNrKwKeJumaMl60I-096-X4g.sFYdj8YyRxoO1TpgPI5E5WkIawYxlTm1CTtit78bFWUg.JPEG.catseyesung%2F1.jpg%2F1.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="달꿈" /></span><span class="name">달꿈</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/psy9133/contents/internal/679886598906496"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDVfMjM3%2FMDAxNzEyMjg4MDE3NDU3.-GXpURMMdEpG0JgZVIpFAkf82l9VK3o2NltwLXzstXsg.DziwHekINBFWHvGmal-qCh03R5kIVTwW0r-2NrbcHR8g.JPEG%2F1Z8A0062.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #아이반찬
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">소고기 오이볶음 만드는 법 오이나물볶음 아이
+                            오이반찬</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMzA5MjVfMTEx%2FMDAxNjk1NjExNzg4Mjc4.ph6UqMf8tu_W34M3FUTbc9I29xwNwPWhxCTQ-RbTKEsg.rO-iCRJvX7aLSDLGMpVEGY5V3TX37laQz5nNvo1iayog.JPEG.psy9133%2F1Z8A3593.JPG%2F1Z8A3593.JPG%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="은솔희섭mom" /></span><span class="name">은솔희섭mom</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/flavor/contents/internal/681962230915456"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTFfMjM1%2FMDAxNzEyNzkzNjE3NDYw.yPfhY9T1K3Ol036OZc2MOFDnB5guTwuGIrn53FxfKFYg.IjhVsfhd8D8qXJOvykP3YXIG2JkWStc8RDnvutMIKgcg.JPEG%2F%EB%A9%94%EC%9D%B81.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #오븐요리
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">머랭쿠키 만들기 홈베이킹 오븐요리</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA3MDlfODgg%2FMDAxNjU3Mjk4NzA5NDU3.9gHpqaHSPUGSLRbFwFv74x37FCyFcasGXaOAE9p7SnMg.PwRpjv4AvOaoLD0ZhyX2VlAb3TBCagnRJMDiszr6bYgg.PNG.jin5194%2F232.png%2F232.png%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="체리사랑" /></span><span class="name">체리사랑</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/pingu528/contents/internal/680729946014016"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDdfMTEx%2FMDAxNzEyNDkyMzMxOTQ1.vBRldhZn-6Vnc-Qvngo_TLUmQ4hI1g0DM85yoWCDL8gg.DOe1FDGGqxSjl8gwML565zN_NWcVHMvzxreAeaKtfk8g.JPEG%2FIMG_5915.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #피크닉도시락
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">소금빵 샌드위치 햄치즈샌드위치 만들기 소스
+                            만드는법 피크닉 도시락메뉴</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAxNjExMTFfMjQ5%2FMDAxNDc4ODc0MzE1OTkz.77sDwTehVHx3LApUOG_VyGPkLYC42875EwPFVKrBNHEg.av_IKriBSfSfsovnUMk83ePGwAO3pnJlJUkl3-aLqgkg.JPEG.pingu528%2FIMG_1577.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="웅이맘" /></span><span class="name">웅이맘</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/kimhy004/contents/internal/682015547453984"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTFfNzQg%2FMDAxNzEyODA2NzUxNTkx.TFoE1B-sZV2MmbB2umg3PPqDG6jEGem2P-vvwg3SC48g.BnXJVoL46oIBpC2upSWPVsPwzZ5ZLYo-fJZslL9LQLsg.PNG%2FDSCF0851.png%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #안주만들기
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">베이컨말이 만드는 법 베이컨 떡말이 간단한 술안주
+                            만들기</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMTAyMjhfOTkg%2FMDAxNjE0NDk5NTcyNDk2._ES4AtEAN48PEwXn0Zb8GBiLOY9Npx3HG0cOTnxk3m0g.StPfXxcFKN_KsKLXu_FAYUIR3NY3rwjeanSckXHTcuQg.JPEG.kimhy004%2Fbeauty_16%252816%2529_6.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="들꽃향기" /></span><span class="name">들꽃향기</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/misoo0612/contents/internal/680220296958752"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDZfMTIz%2FMDAxNzEyMzY3MjcwMTYy.Qv_drkPo7pc7bqySSQcJHPO25ou2IZ6aAuQ5BB8RCM8g.0FldCWGD19KPftFs5ijcS82Rve_2nX_rpFlPDEo-zSEg.JPEG%2FIMG_5349.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간식만들기
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">통밀 또띠아 요리 간단 토스트 레시피 양배추토스트
+                            만들기 주말 요리 간식만들기</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20160512_133%2Fmisoo0612_1463018273863p0RE0_JPEG%2FIMG_9459.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="제이맘" /></span><span class="name">제이맘</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/hubbyscuisine/contents/internal/683948373378560"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTZfNDcg%2FMDAxNzEzMjQ2MzU5Nzg1.izjFdeBOWDR1FKvg37IQuZdk8V-CuJHspod61urRSNMg.ZEUo5QypPy5K8D_2IP5vmoKyRrH7BG_D-LYHiAUmS3sg.JPEG%2FDSC08304.JPG%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한국물요리
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">환절기에 저녁국거리로 딱 좋은 시원한 국물요리
+                            황태국 황태 계란국 끓이는 법</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA2MThfMTcy%2FMDAxNjU1NTYyMDQzNjQ5.ZxOAVCywQPMpQDFq30seeZECCShmtqIg76yQPgWxGR8g.B7k4aF8eK-BuTl-J12ph7l3c8RJVphxVBQGLSZXLeWEg.PNG.papasmuff%2F%25EC%2595%2584%25EC%259E%25AC%25EC%2583%2588%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%258022.png%2F%25EC%2595%2584%25EC%259E%25AC%25EC%2583%2588%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%258022.png%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="아재주부" /></span><span class="name">아재주부</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="FourColumnItemView-module__common_item___AZCjQ">
+                      <a target="_blank" href="https://in.naver.com/chopchopkitchen/contents/internal/676410344210688"
+                        class="FourColumnItemView-module__link_item___kg8z9">
+                        <div class="FourColumnItemView-module__thumb___NilYx">
+                          <span class="ImgView-module__content_img___QA0gl" style="width: 100%; height: 120px"><img
+                              src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMjZfMTg3%2FMDAxNzExNDM2MzgyNzcy.XB6Tp6l04mBTbuMjcM-onO9YrORFd-ADDr9VxzFkD7Eg.rb93f7Qd8yPMAl2cIY6WyvI797S_Z9vYMbqN0BIY4iAg.JPEG%2F%EB%A9%B8%EC%B9%98%EC%B9%BC%EA%B5%AD%EC%88%98_%EC%96%B4%EB%AC%B5_%EB%9D%BC%EB%A9%B4_1.jpg%22&amp;type=nf365_240&amp;service=navermain"
+                              width="100%" height="120" loading="lazy" /></span>
+                        </div>
+                        <div class="FourColumnItemView-module__info___AUOzS">
+                          <div class="FourColumnItemView-module__tag___pGeJ9 common_em">
+                            #간단한국물요리
+                          </div>
+                          <strong class="FourColumnItemView-module__title___m5v48">농심 멸치칼국수 어묵 라면 레시피 얼큰한 간단 국물
+                            요리 매운 오뎅탕 라면 끓이는법</strong>
+                          <div class="FourColumnItemView-module__source_box___z93a8">
+                            <span class="FourColumnItemView-module__source___VPoS4"><span
+                                class="FourColumnItemView-module__thumb___NilYx"><img
+                                  src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMzA2MDdfNzIg%2FMDAxNjg2MTExNjYwMDkz.utonqVoSukG1rOfog_f_37e1AfZwWGZ1rFUlwjaGmO4g.4YH16C7r-AI_1NgSGpfdqzsuUvmjjQAVWvmogzui-hQg.JPEG.handuddn%2Fcck.jpg%2Fcck.jpg%22&amp;type=nf40_40&amp;service=navermain"
+                                  width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7"
+                                  alt="김찹찹" /></span><span class="name">김찹찹</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="FourColumnView-module__btn_next___uxNBT">
+                  <span class="blind">다음 페이지</span>
+                </button>
+              </div>
+            </div>
+            <div class="FeedView-module__content_more_area___azKs4">
+              <button type="button" class="FeedView-module__btn_more___zGfeT">
+                펼쳐보기<i class="FeedView-module__ico_plus___dMU_U"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="Layout-module__column_right___wLgQj">
+          <div class="Layout-module__right_content_area___pwiOb" id="right-content-area">
+            <div class="Layout-module__right_top___h3g3v">
+              <div id="account" class="Layout-module__content_area___b_3TU" role="region" aria-label="로그인 정보">
+                <div class="MyView-module__my_login___tOTgr">
+                  <p class="MyView-module__login_text___G0Dzv">
+                    네이버를 더 안전하고 편리하게 이용하세요
+                  </p>
+                  <a href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/"
+                    class="MyView-module__link_login___HpHMW"><i class="MyView-module__naver_logo____Y442"><span
+                        class="blind">NAVER</span></i>로그인</a>
+                  <div class="MyView-module__login_more___Qaa3P">
+                    <a href="https://nid.naver.com/user2/api/route?m=routeIdInquiry"
+                      class="MyView-module__link_more___sbxGh">아이디 찾기</a><a
+                      href="https://nid.naver.com/user2/api/route?m=routePwInquiry"
+                      class="MyView-module__link_more___sbxGh">비밀번호 찾기</a><a
+                      href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
+                      class="MyView-module__link_more___sbxGh">회원가입</a>
+                  </div>
+                </div>
+              </div>
+              <div class="Layout-module__banner_area___CUXNe" target="">
+                <a href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcstockbottom&amp;campaign_id=2401-logistics-001&amp;target=https%3A%2F%2Fmkt.naver.com%2Fp1%2Fpoint%3Fdtm_source%3Dnaver_pcstockbottom%26dtm_medium%3Dmktatrb%26dtm_campaign%3D2401-logistics-001"
+                  class="Layout-module__banner_area___CUXNe" target="_blank"><img
+                    src="https://s.pstatic.net/static/www/mobile/edit/20240319_1095/upload_1710827176619xEyrh.png"
+                    width="420" height="80" /></a>
+              </div>
+              <div id="widgetboard" class="Layout-module__right_bottom___s54MX">
+                <div class="RightSecond-module__tool_area___KOtcI" role="region" aria-label="위젯">
+                  <div class="RightSecond-module__tool_title___chjKZ">
+                    위젯 보드
+                  </div>
+                  <div class="RightSecond-module__tool_content___rysfx">
+                    <div class="RightSecond-module__tool_group___sTw_L">
+                      <a href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/?to=widget"
+                        class="RightSecond-module__calendar_box___xnbPZ">
+                        <div class="RightSecond-module__calendar_info___xtn_r">
+                          <span class="RightSecond-module__link_info_title___Z_U01">캘린더</span>
+                          <div class="RightSecond-module__info_box___KBiuI">
+                            <div class="RightSecond-module__link_info_date___KzwWL">
+                              4.19<span class="RightSecond-module__day___AFuw4">금</span>
+                            </div>
+                          </div>
+                          <span class="RightSecond-module__link_login___gu_oJ">로그인하기</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="RightSecond-module__tool_group___sTw_L">
+                      <a href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/?to=widget"
+                        class="RightSecond-module__memo_box___TS9Ea">
+                        <div class="RightSecond-module__memo_top___oRi4T">
+                          <span class="RightSecond-module__link_memo_title___qJD7A">메모</span>
+                        </div>
+                        <div class="RightSecond-module__memo_info___qVruF">
+                          <ul class="RightSecond-module__info_list___HWUd8">
+                            <li class="RightSecond-module__info_item___dvMK8"></li>
+                            <li class="RightSecond-module__info_item___dvMK8"></li>
+                            <li class="RightSecond-module__info_item___dvMK8">
+                              <span class="RightSecond-module__login_text___x_Y2o">로그인하기</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="RightSecond-module__tool_group___sTw_L">
+                      <a href="https://papago.naver.com/?sk=ko&amp;st=&amp;tk=en"
+                        class="RightSecond-module__link_papago_box___wRMmH" target="_blank" rel="noreferrer">
+                        <div class="RightSecond-module__papago_box___p1UbB">
+                          <i class="RightSecond-module__ico_papago_text___S6EMJ"><span class="blind">papago</span></i>
+                          <div class="RightSecond-module__papago_text___VLGlw">
+                            번역하기
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="RightSecond-module__tool_group___sTw_L">
+                      <div class="RightSecond-module__dic_box___nuOJs">
+                        <div class="RightSecond-module__dic_box_info___sDfWY">
+                          <a href="https://en.dict.naver.com/#/mini/main"
+                            class="RightSecond-module__link_info_text___kDhhB">영어사전</a><a
+                            href="https://learn.dict.naver.com/m/endic/today/conversation.dict"
+                            class="RightSecond-module__link_info_today___cHFIV">
+                            <div class="RightSecond-module__today_expression___JWte_">
+                              <div class="RightSecond-module__expression_text___p8ne7">
+                                How much does your bag weigh?
+                              </div>
+                            </div>
+                            <div class="RightSecond-module__today_translate___bUa99">
+                              가방 무게가 어떻게 돼?
+                            </div>
+                          </a>
+                        </div>
+                        <a href="https://en.dict.naver.com/#/mini/main" class="RightSecond-module__link_search___x5ZXc"
+                          aria-label="단어 검색하기"><span class="RightSecond-module__search_text___XNupR"
+                            aria-hidden="true">단어 검색하기</span></a>
+                      </div>
+                    </div>
+                    <div
+                      class="RightSecond-module__tool_group___sTw_L RightSecond-module__type_wide___BoQ8c RightSecond-module__type_vibe___vIgsT">
+                      <div class="RightSecond-module__vibe_box___GlWhz">
+                        <div class="RightSecond-module__vibe_top___qnW3z">
+                          <i class="RightSecond-module__ico_vibe___cZpOT"><span class="blind">VIBE</span></i>
+                          <div class="RightSecond-module__vibe_title___smE5p">
+                            스트레스해소음악
+                          </div>
+                          <button type="button" class="RightSecond-module__vibe_btn_refresh___BjyFe">
+                            다른 추천 보기
+                          </button>
+                        </div>
+                        <div class="RightSecond-module__vibe_info___gjxEy">
+                          <ul class="RightSecond-module__vibe_list___Rz6JW">
+                            <li class="RightSecond-module__vibe_item___Oycdw">
+                              <a href="https://vibe.naver.com/audio_player?curationId=1056&amp;contentId=CH_1622_EP_139&amp;audioContentId=CH_1622_EP_139"
+                                class="RightSecond-module__item_thumb___lNKIU" target="_blank" rel="noreferrer"><span
+                                  class="RightSecond-module__thumb___krRnF"><span
+                                    class="ImgView-module__content_img___QA0gl ImgView-module__type_gradient___wrDaw"
+                                    style="width: 108px; height: 162px"><img
+                                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Faudio.phinf%2F20200410_220%2F1586484483680KPWoR_JPEG%2F%25BF%25C0%25B5%25F0%25BF%25C0%25C5%25AC%25B8%25B3_%25C0%25CE%25BB%25FDsunbeam-76825_1280.jpg%22&amp;type=f216_324&amp;service=navermain"
+                                      width="108" height="162" loading="eager" /></span><i
+                                    class="RightSecond-module__ico_vibe_play___FHNl2"><span
+                                      class="blind">재생</span></i></span></a><a
+                                href="https://vibe.naver.com/audio_player?curationId=1056&amp;contentId=CH_1622_EP_139&amp;audioContentId=CH_1622_EP_139"
+                                class="RightSecond-module__item_desc___CBYqM" target="_blank" rel="noreferrer"><span
+                                  class="RightSecond-module__desc_text___Zj1oc">인생은 아름다워</span></a>
+                            </li>
+                            <li class="RightSecond-module__vibe_item___Oycdw">
+                              <a href="https://vibe.naver.com/audio_player?curationId=1056&amp;contentId=CH_1622_EP_89&amp;audioContentId=CH_1622_EP_89"
+                                class="RightSecond-module__item_thumb___lNKIU" target="_blank" rel="noreferrer"><span
+                                  class="RightSecond-module__thumb___krRnF"><span
+                                    class="ImgView-module__content_img___QA0gl ImgView-module__type_gradient___wrDaw"
+                                    style="width: 108px; height: 162px"><img
+                                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Faudio.phinf%2F20191227_12%2F15773737026608CGsA_JPEG%2F%25BF%25C0%25B5%25CD%25C5%25AC%25B8%25B3%25BF%25C0%25B5%25CD%25C5%25AC%25B8%25B3_1.jpg%22&amp;type=f216_324&amp;service=navermain"
+                                      width="108" height="162" loading="eager" /></span><i
+                                    class="RightSecond-module__ico_vibe_play___FHNl2"><span
+                                      class="blind">재생</span></i></span></a><a
+                                href="https://vibe.naver.com/audio_player?curationId=1056&amp;contentId=CH_1622_EP_89&amp;audioContentId=CH_1622_EP_89"
+                                class="RightSecond-module__item_desc___CBYqM" target="_blank" rel="noreferrer"><span
+                                  class="RightSecond-module__desc_text___Zj1oc">바람이 불어오는 곳</span></a>
+                            </li>
+                            <li class="RightSecond-module__vibe_item___Oycdw">
+                              <a href="https://vibe.naver.com/audio_player?curationId=1056&amp;contentId=CH_1622_EP_99&amp;audioContentId=CH_1622_EP_99"
+                                class="RightSecond-module__item_thumb___lNKIU" target="_blank" rel="noreferrer"><span
+                                  class="RightSecond-module__thumb___krRnF"><span
+                                    class="ImgView-module__content_img___QA0gl ImgView-module__type_gradient___wrDaw"
+                                    style="width: 108px; height: 162px"><img
+                                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Faudio.phinf%2F20191227_188%2F1577375064121OlP7R_JPEG%2F%25BF%25C0%25B5%25F0%25BF%25C0_%25C5%25AC%25B8%25B3.jpg%22&amp;type=f216_324&amp;service=navermain"
+                                      width="108" height="162" loading="eager" /></span><i
+                                    class="RightSecond-module__ico_vibe_play___FHNl2"><span
+                                      class="blind">재생</span></i></span></a><a
+                                href="https://vibe.naver.com/audio_player?curationId=1056&amp;contentId=CH_1622_EP_99&amp;audioContentId=CH_1622_EP_99"
+                                class="RightSecond-module__item_desc___CBYqM" target="_blank" rel="noreferrer"><span
+                                  class="RightSecond-module__desc_text___Zj1oc">민들레</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="https://m.naver.com/" class="RightSecond-module__link_more___u2fYX"><span
+                      class="RightSecond-module__more_text___kOE1r"><em class="RightSecond-module__point___udj6V">모바일
+                        네이버 메인</em>
+                      열기</span></a>
+                </div>
+                <div class="Layout-module__content_area___b_3TU">
+                  <div class="RightSecond-module__banner_box___w4PCJ">
+                    <div class="RightSecond-module__banner_rolling___Oc2XS">
+                      <div class="AutoRolling-module__rolling-x___Omp83" style="animation-duration: 0.5s">
+                        <a href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcwidgetbottom&amp;campaign_id=2404-naverclip-001&amp;material=A&amp;target=https%3A%2F%2Fm.naver.com%2Fshorts%2Fchallenge%2F%3Fdtm_detail%3DA%26dtm_source%3Dnaver_pcwidgetbottom%26dtm_medium%3Dmktatrb_mn%26dtm_campaign%3D2404-naverclip-001"
+                          class="RightSecond-module__link_banner___OJtFz" target="_blank"><span
+                            class="RightSecond-module__banner_thumb___iZydB"><img
+                              src="https://s.pstatic.net/static/www/mobile/edit/20240403_1095/upload_1712137671525fuXhw.png"
+                              width="42" height="42" alt="" /></span>
+                          <div class="RightSecond-module__banner_desc___XfYOl">
+                            <div class="RightSecond-module__desc_text1___wnAI6">
+                              전국 꽃놀이 특파원 나와주세요
+                            </div>
+                            <div class="RightSecond-module__desc_text2___m6ru6">
+                              클립으로 올렸다, 네이버페이가 왔다
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="AutoRolling-module__rolling-x___Omp83" style="animation-duration: 0.5s">
+                        <a href="https://whale.naver.com/ko/download/" class="RightSecond-module__link_banner___OJtFz"
+                          target="_blank"><span class="RightSecond-module__banner_thumb___iZydB"><img
+                              src="https://s.pstatic.net/static/www/mobile/edit/20231109_1095/upload_1699514358075UmvS8.png"
+                              width="42" height="42" alt="" /></span>
+                          <div class="RightSecond-module__banner_desc___XfYOl">
+                            <div class="RightSecond-module__desc_text1___wnAI6">
+                              나만의 스마트한 브라우저, 웨일
+                            </div>
+                            <div class="RightSecond-module__desc_text2___m6ru6">
+                              인터넷을 여는 가장 스마트한 방법
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="RightSecond-module__banner_indicator___Kf5T0">
+                      <span
+                        class="RightSecond-module__dot___A5lUE RightSecond-module__is_active___QHUyT">item.text</span><span
+                        class="RightSecond-module__dot___A5lUE">item.text</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="SettingView-module__layer_setting___JwfQs">
+            <a href="#" role="button"
+              class="SettingView-module__btn_setting___Z_3Uu SettingView-module__type_top___GkN8V"
+              aria-pressed="false"><span class="blind">최상단으로 이동</span></a><a id="viewSetting" href="#" role="button"
+              class="SettingView-module__btn_setting___Z_3Uu SettingView-module__type_system___kev9z"
+              aria-haspopup="true" aria-expanded="false" aria-pressed="false"><span class="blind">홈 설정</span></a>
+          </div>
+
+        </div>
+      </div>
+      <div id="footer" role="contentinfo">
+        <div class="footer_inner">
+          <div class="nbanner_area">
+            <div id="da_public_left">
+              <div style="width: 410px; height: 100px; border: 0pt none">
+                <iframe id="da_public_left_tgtLREC" width="410" height="100" frameborder="no" scrolling="no"
+                  tabindex="0" title="AD"
+                  src="https://siape.veta.naver.com/fxshow?su=SU10868&amp;nrefreshx=0#frameId=da_public_left_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=3308957534.7269373&amp;isFluid=false&amp;runtime=NDPSDK"
+                  style="border: 0px; vertical-align: bottom"></iframe>
+              </div>
+            </div>
+            <div id="da_public_right">
+               </div>
+            <div id="veta_time2">
+              
+            </div>
+          </div>
+          <div class="notice_area">
+            <div class="notice_box">
+              <h3 class="title">
+                <a target="_blank" href="https://www.naver.com/NOTICE">공지사항</a>
+              </h3>
+            </div>
+            <a href="/more.html" target="_blank" class="link_all">서비스 전체보기</a>
+          </div>
+          <div class="aside_area">
+            <div class="partner_box_wrap">
+              <div class="partner_box">
+                <h3 class="title">Partners</h3>
+                <a target="_blank" href="https://www.navercorp.com/esg/projectFlower" class="link_partner">프로젝트 꽃</a>
+                <a target="_blank" href="https://business.naver.com/" class="link_partner">네이버 비즈니스</a>
+                <a target="_blank" href="https://bizschool.naver.com/" class="link_partner">네이버 비즈니스 스쿨</a>
+                <a target="_blank" href="https://www.navercorp.com/service/serviceAD" class="link_partner">네이버 광고</a>
+                <a target="_blank" href="https://sell.storefarm.naver.com/#/home/about" class="link_partner">스토어 개설</a>
+                <a target="_blank" href="https://smartplace.naver.com/" class="link_partner">지역업체 등록</a>
+                <a target="_blank" href="https://expert.naver.com/expert/introduction?tab=guide#join"
+                  class="link_partner">엑스퍼트 등록</a>
+              </div>
+              <div class="partner_box">
+                <h3 class="title">Developers</h3>
+                <a target="_blank" href="https://developers.naver.com/" class="link_partner">네이버 개발자 센터</a>
+                <a target="_blank" href="https://developers.naver.com/docs/common/openapiguide/#/apilist.md"
+                  class="link_partner">오픈 API</a>
+                <a target="_blank" href="https://naver.github.io/" class="link_partner">오픈소스</a>
+                <a target="_blank" href="https://d2.naver.com/" class="link_partner">네이버 D2</a>
+                <a target="_blank" href="http://d2startup.com/" class="link_partner">네이버 D2SF</a>
+                <a target="_blank" href="https://www.naverlabs.com/" class="link_partner">네이버 랩스</a>
+              </div>
+           
+                  <div class="corp_area">
+                    <h3 class="blind">네이버 정책 및 약관</h3>
+                    <ul class="list_corp">
+                      <li class="corp_item">
+                        <a target="_blank" href="https://www.navercorp.com/">회사소개</a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank" href="https://recruit.navercorp.com/">인재채용</a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank" href="https://www.navercorp.com/naver/proposalInquire">제휴제안</a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank" href="https://www.naver.com/policy/service.html">이용약관</a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank"
+                          href="https://www.naver.com/policy/privacy.html"><strong>개인정보처리방침</strong></a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank" href="https://policy.naver.com/policy/youthpolicy.html">청소년보호정책</a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank" href="https://policy.naver.com/policy/service_group.html">네이버 정책</a>
+                      </li>
+                      <li class="corp_item">
+                        <a target="_blank" href="https://help.naver.com/">고객센터</a>
+                      </li>
+                    </ul>
+                    <address class="addr">
+                      <a target="_blank" href="https://www.navercorp.com/">NAVER Corp.</a>
+                    </address>
+                  </div>
+                  </script>
+</body>
+
+</html>

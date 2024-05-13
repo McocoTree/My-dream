@@ -1,0 +1,208 @@
+aside,div,footer,header,nav,section {
+  border: 1px solid black;
+}
+#wrap {
+  width: 80em;
+  height: 120em;
+  margin: 0 auto;
+}
+#wrap > div,footer,header,nav {
+  margin: 1em;
+  width: 78em;
+}
+#wrap div {
+  margin: 1em;
+}
+/*-----------------------header------------------------- */
+header {
+    text-align: center;
+    height: 10em;
+    line-height: 10em;
+
+}
+header>h1{
+    line-height: 0em;
+    position: absolute;
+
+}
+.icon_item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+
+}
+.icon_item1{
+  background-color: wheat;
+}
+.icon_item2{
+  background-color: wheat;
+}
+.icon_item3{
+  background-color: wheat;
+}
+.icon_item4{
+  background-color: wheat;
+}
+.icon_item5{
+  background-color: wheat;
+}
+.icon_item6{
+  background-color: wheat;
+}
+.icon_item7{
+  background-color: wheat;
+}
+.icon_itemt8{
+  background-color: wheat;
+}
+.icon_item9{
+  background-color: wheat;
+}
+.icon_item10{
+  background-color: wheat;
+}
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ outline: none;
+}
+nav {
+    height: 3em;
+}
+#search {
+    border: 1px solid green;
+    width: 50em;
+    height: 3em;
+    line-height: 3em;
+    display: inline-block;
+    border-radius: 20px;
+}
+#nav {
+    width: 78em;
+    height: 2em;
+    margin: 0 auto;
+    line-height: 2em;
+    display: block;
+    
+}
+/*-----------------------container------------------------- */
+#container {
+    height: 83em;
+}
+
+section {
+    margin: 1em;
+    display: inline-block;
+    width: 45em;
+    height: 77em;
+    float: left;
+}
+#ads {
+    height: 8em;
+}
+#news_stand {
+    height: 20em;
+    text-align: center;
+}
+.stand_div{
+    border: none;
+}
+.news_span {
+    display: inline-block;
+    width: 6em;
+    height: 4em;
+    line-height: 4em;
+    border: 1px solid black;
+}
+#big_content {
+    display: inline-block;
+    width: 20em;
+    height: 14em;
+    border: 1px solid black;
+    margin: 1em;
+    float: left;
+}
+#sub {
+    display: inline-block;
+    width: 16em;
+    height: 14em;
+}
+.sub_content1 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 15em;
+    height: 4em;
+    margin: 0.2em;
+}
+.content {
+    width: 38em;
+    height: 6em;
+}
+aside {
+  border: 1px solid black;
+  margin: 1em;
+  width: 28em;
+  height: 77em;
+  float: left;
+}
+#login {
+  height: 10em;
+}
+#ads2 {
+  height: 13em;
+}
+#shopping_mall {
+  height: 40em;
+
+}
+.shopping_content {
+  text-align: center;
+  line-height: 10em;
+  display: inline-block;
+  width: 7.3em;
+  height: 10em;
+  border: 1px solid black;
+}
+#shopping_mall>div{
+border: none;
+}
+
+footer>div{
+    border: none;
+    text-align: center;
+}
+footer span{
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0px 0.5em;
+    width: 23.7em;
+    height: 5em;
+}
+
+span{
+    text-align: center;
+}
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+/* Style to increase size of search input */
+input[type="text"] {
+  width: 700px;
+  padding: 12px;
+  font-size: 16px;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #333;
+  border: 2px solid  #016c07;
+
+}
