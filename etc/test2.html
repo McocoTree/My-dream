@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="thankYou.css">
+  
+  <style>
+ 
+
+:root {
+  --bg: #1c1c1c;
+  --text-height: 300px;
+}
+
+.sparkle {
+  width: 600px;
+  height: var(--text-height);
+  font-size: 50px;
+  text-align: center;
+  line-height: var(--text-height);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 100;
+  position: relative;
+  text-shadow: 0px 0px 10px black;
+}
+
+
+.star {
+  --star-size: 50px;
+  --star-life: 5s;
+  
+  --start-left: 0px;
+  --start-top: 0px;
+  
+  --end-left: 0px;
+  --end-top: 0px;
+  
+  --star-color: #f1c40f;
+  
+  width: var(--star-size);
+  height: var(--star-size);
+  left: var(--end-left);
+  top: var(--end-top);
+  background: var(--star-color);
+  position: absolute;
+  mix-blend-mode: lighten;
+  animation: slide var(--star-life) ease-in forwards;
+}
+
+.star:after {
+  display: block;
+  content: "";
+  width: var(--star-size);
+  height: var(--star-size);
+  background-color: var(--bg);
+  border-radius: 100%;
+  position: relative;
+  top: calc(var(--star-size) / 2 * -1);
+  left: calc(var(--star-size) / 2 * -1);
+  box-shadow: var(--star-size) var(--star-size) var(--bg),
+    var(--star-size) 0px var(--bg),
+    0px var(--star-size) var(--bg);
+}
+
+@keyframes slide {
+  0%{
+    left: var(--start-left);
+    top: var(--start-top);
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100%{
+    left: var(--end-left);
+    top: var(--end-top);
+    transform: rotate(calc(180deg * var(--star-life-num))) scale(0.5);
+    opacity: 1;
+  }
+}
+  </style>
+  <script>
+    function change(object, size, color) {
+      object.style.fontSize = size;
+      object.style.color = color;
+    }
+  </script>
+</head>
+
+<body>
+  
+  <header>
+    <img src="./img/thankYou.png" alt="">
+    <ul>
+      <li class="menu"><a href="#home" class="dropbtn">Home</a></li>
+      <li class="menu"><a href="#sitemap" class="dropbtn">Sitemap</a></li>
+    </ul>
+    
+  </header>
+  <div class="sparkle">thankYou
+  </div>
+   <!-- Particle Effect Container -->
+<div id="particles-js"></div>
+
+  <nav>
+    <ul>
+      <li class="menu">
+        <a href="#home" class="dropbtn">Home</a>
+      </li>
+      <li class="menu">
+        <a href="#gallery" class="dropbtn">gallery</a>
+      </li>
+      <li class="menu">
+        <a href="#board" class="dropbtn">게시판</a>
+        <div class="content">
+          <a href="#">자유 게시판</a>
+          <a href="#">문의 게시판</a>
+          <a href="#">건의 게시판</a>
+        </div>
+      </li>
+      <li class="menu">
+        <a href="#" class="dropbtn">원두구매</a>
+        <div class="content">
+          <a href="#">코스타리카</a>
+          <a href="#">아라비아</a>
+          <a href="#">콜롬비아</a>
+        </div>
+      </li>
+      <li class="menu">
+        <a href="#" class="dropbtn">상품구매</a>
+        <div class="content">
+          <a href="#">더치커피</a>
+          <a href="#">콜드브루</a>
+          <a href="#">디카페인</a>
+        </div>
+      </li>
+      <li class="menu">
+        <a href="#" class="dropbtn">찾아오시는길</a>
+        <div class="content">
+          <a href="#">버스</a>
+          <a href="#">전철</a>
+          <a href="#">비행기</a>
+        </div>
+      </li>
+      <li class="member">
+        <a href="#" class="dropbtn">회원가입</a>
+      </li>
+      <li class="member">
+        <a href="#" class="dropbtn">로그인</a>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    
+  <!-- Initialize Particle Effect -->
+  <script>
+    const sparkle = document.querySelector(".sparkle");
+
+var current_star_count = 0;
+
+const MAX_STARS = 60;
+const STAR_INTERVAL = 16;
+
+const MAX_STAR_LIFE = 3;
+const MIN_STAR_LIFE = 1;
+
+const MAX_STAR_SIZE = 70;
+const MIN_STAR_SIZE = 30;
+
+const MIN_STAR_TRAVEL_X = 100;
+const MIN_STAR_TRAVEL_Y = 100;
+
+const Star = class {
+  constructor() {
+    this.size = this.random(MAX_STAR_SIZE, MIN_STAR_SIZE);
+
+    this.x = this.random(
+      sparkle.offsetWidth * 0.75,
+      sparkle.offsetWidth * 0.25
+    );
+    this.y = sparkle.offsetHeight / 2 - this.size / 2;
+
+    this.x_dir = this.randomMinus();
+    this.y_dir = this.randomMinus();
+
+    this.x_max_travel =
+      this.x_dir === -1 ? this.x : sparkle.offsetWidth - this.x - this.size;
+    this.y_max_travel = sparkle.offsetHeight / 2 - this.size;
+
+    this.x_travel_dist = this.random(this.x_max_travel, MIN_STAR_TRAVEL_X);
+    this.y_travel_dist = this.random(this.y_max_travel, MIN_STAR_TRAVEL_Y);
+
+    this.x_end = this.x + this.x_travel_dist * this.x_dir;
+    this.y_end = this.y + this.y_travel_dist * this.y_dir;
+
+    this.life = this.random(MAX_STAR_LIFE, MIN_STAR_LIFE);
+
+    this.star = document.createElement("div");
+    this.star.classList.add("star");
+
+    this.star.style.setProperty("--start-left", this.x + "px");
+    this.star.style.setProperty("--start-top", this.y + "px");
+
+    this.star.style.setProperty("--end-left", this.x_end + "px");
+    this.star.style.setProperty("--end-top", this.y_end + "px");
+
+    this.star.style.setProperty("--star-life", this.life + "s");
+    this.star.style.setProperty("--star-life-num", this.life);
+
+    this.star.style.setProperty("--star-size", this.size + "px");
+    this.star.style.setProperty("--star-color", this.randomRainbowColor());
+  }
+
+  draw() {
+    sparkle.appendChild(this.star);
+  }
+
+  pop() {
+    sparkle.removeChild(this.star);
+  }
+
+  random(max, min) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  randomRainbowColor(){
+    return "hsla("+this.random(360,0)+", 100%, 50%, 1)";
+  }
+
+  randomMinus() {
+    return Math.random() > 0.5 ? 1 : -1;
+  }
+};
+
+setInterval(() => {
+  if (current_star_count >= MAX_STARS) {
+    return;
+  }
+
+  current_star_count++;
+
+  var newStar = new Star();
+
+  newStar.draw();
+
+  setTimeout(() => {
+    current_star_count--;
+
+    newStar.pop();
+  }, newStar.life * 1000);
+}, STAR_INTERVAL);
+
+  </script>
+    
+  </section>
+  <footer>
+    <div class="footer content1">
+      <a href="">다운로드</a>
+      <a href="">개인정보처리방침</a>
+      <a href="">저작권지침및신고</a>
+      <a href="">이메일무단수집거부</a>
+    </div>
+    <div class="footer content2">
+      <p>왕십리캠퍼스 : 서울시 성동구 무학로2길 54 신방빌딩 4,5층 tel:12-345-7890</p>
+      <p>Copyright <span>ⓒ</span> 2018 mrhi, Inc. All right reserved. Contact webmaster for more information. 23-455-1234</p>
+    </div>
+  </footer>
+</body>
+
+</html>
